@@ -9,14 +9,10 @@ public class Student {
     double economicAssessment;
     double foreignLanguageAssessment;
 
-    Student(int id1, String firstName1, String lastName1, String course1,
-            double mathScore1, double economicAssessment1,
+    Student(int id1, String firstName1, String lastName1, String course1, double mathScore1, double economicAssessment1,
             double foreignLanguageAssessment1) {
 
-        id = id1;
-        firstName = firstName1;
-        lastName = lastName1;
-        course = course1;
+        this(id1, firstName1, lastName1, course1);
         mathScore = mathScore1;
         economicAssessment = economicAssessment1;
         foreignLanguageAssessment = foreignLanguageAssessment1;
@@ -29,5 +25,6 @@ public class Student {
         course = course2;
     }
 
-    Student() {}
+    Student() {
+    }
 }
