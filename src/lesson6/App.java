@@ -10,8 +10,8 @@ public class App {
         System.out.println(sum(5, 5, 5, 5));
     }
 
-    static String sum() {
-        return "Входящие параметры отсутсвуют сумма = 0";
+    static int sum() {
+        return 0;
     }
 
     static int sum(int a) {
