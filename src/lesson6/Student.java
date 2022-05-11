@@ -1,13 +1,13 @@
-package lesson5;
+package lesson6;
 
 public class Student {
-    int id;
-    String firstName;
-    String lastName;
-    String course;
-    double mathScore;
-    double economicAssessment;
-    double foreignLanguageAssessment;
+    int id = 0;
+    String firstName = "FName";
+    String lastName = "LName";
+    String course = "none";
+    double mathScore = 0.0;
+    double economicAssessment = 0.0;
+    double foreignLanguageAssessment = 0.0;
 
     Student(int id1, String firstName1, String lastName1, String course1, double mathScore1, double economicAssessment1,
             double foreignLanguageAssessment1) {
@@ -26,5 +26,15 @@ public class Student {
     }
 
     Student() {
+    }
+
+    String printStudentInfo() {
+        return "ID " + id +
+                " firstName " + firstName +
+                " lastName " + lastName +
+                " course " + course + 
+                " mathScore " + mathScore + 
+                " economic " + economicAssessment +
+                " foreign " + foreignLanguageAssessment;
     }
 }
