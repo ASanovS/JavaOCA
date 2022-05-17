@@ -1,6 +1,7 @@
 package lesson8;
 
 public class Task1 {
+    
     static double umnozhenije(double a, double b, double c) {
         return a * b * c;
     }
