@@ -29,9 +29,10 @@ public class CarTest {
     }
 
     public static void swapColorInCars(Car car1, Car car2) {
-        Car car3 = new Car();
-        car3.color = car1.color;
+        // Car car3 = new Car();
+        // car3.color = car1.color;
+        String color = car1.color;
         car1.color = car2.color;
-        car2.color = car3.color;
+        car2.color = color;
     }
 }
