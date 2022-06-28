@@ -9,5 +9,8 @@ public class App {
         Student st2 = new Student("Jon", 2, 5.0);
         StudentTest.studentEquals1(st1, st2);
         StudentTest.studentEquals2(st1, st2);
+
+        Student st3 = new Student("Jane", 5, 5.0);
+
     }
 }
