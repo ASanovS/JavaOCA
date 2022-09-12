@@ -24,7 +24,7 @@ public class App {
         for (int chas = 0; chas < 24; chas++) {
             for (int minut = 0; minut < 59; minut++) {
                 for (int second = 0; second < 59; second++) {
-                    if (second * chas >= minut) {
+                    if (second * chas > minut) {
                         continue;
                     }
 
