@@ -6,18 +6,6 @@ public class App {
 
         Student st1 = new Student(5);
 
-        // if (st1.grade == 2) {
-        //     System.out.println("Stiden bad grade");
-        // } else if (st1.grade == 3) {
-        //     System.out.println("Student troeshnik");
-        // } else if (st1.grade == 4) {
-        //     System.out.println("Student horoshist");
-        // } else if (st1.grade == 5) {
-        //     System.out.println("Student otlichnik");
-        // } else {
-        //     System.out.println("Nevernaja ocenka");
-        // }
-
         switch (st1.grade) {
             case 2:
                 System.out.println("Dvoeshnik");
