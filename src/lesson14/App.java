@@ -5,19 +5,18 @@ import java.sql.Time;
 public class App {
     public static void main(String[] args) {
 
-        // for (int i = 0; i < 10; i++) {
-        //     if (i == 6) {
-        //         continue;
-        //     }
+        for (int i = 0; i < 10; i++) {
+            if (i == 6) {
+                continue;
+            }
 
-        //     if (i == 7) {
-        //         break;
-        //     }
-        //     System.out.println(i);
-        // }
+            if (i == 7) {
+                break;
+            }
+            System.out.println(i);
+        }
 
-        System.out.println(10%10);
-        // time();
+        time();
     }
     
     static void time() {
