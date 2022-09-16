@@ -21,6 +21,9 @@ public class App {
         String string = "ya@yahoo.com; gog@gmail.com; ua@ukr.net;";
 
         email(string);
+        
+        System.out.println("Exemple lesson 16");
+        emailExampleSolution(string);
     }
 
     static void email(String str) {
@@ -37,6 +40,19 @@ public class App {
                 end = i;
                 System.out.println(str.substring(start + 1, end));
             }
+        }
+    }
+
+    static void emailExampleSolution(String str) {
+        int a = 0;
+        int b = 0;
+        int c = 0;
+
+        while (c < str.length() - 1) {
+            a = str.indexOf('@', c);
+            b = str.indexOf('.', c);
+            c = str.indexOf(';', c + 1);
+            System.out.println(str.substring(a + 1, b));
         }
     }
 }
