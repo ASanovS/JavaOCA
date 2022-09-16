@@ -17,10 +17,25 @@ package lesson16.hw;
 public class App {
     public static void main(String[] args) {
 
+        String string = "ya@yahoo.com; gog@gmail.com; ua@ukr.net;";
+
+        email(string);
     }
-    
-    static String email(String inp) {
-        
-        return null;
+
+    static void email(String str) {
+        int start = 0;
+        int end = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char c1 = str.charAt(i);
+
+            if (c1 == '@') {
+                start = i;
+            }
+            if (c1 == '.') {
+                end = i;
+                System.out.println(str.substring(start + 1, end));
+            }
+        }
     }
 }
