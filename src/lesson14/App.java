@@ -1,7 +1,5 @@
 package lesson14;
 
-import java.sql.Time;
-
 public class App {
     public static void main(String[] args) {
 
