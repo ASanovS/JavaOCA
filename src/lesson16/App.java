@@ -51,9 +51,9 @@ public class App {
         System.out.println(t2);
 
         String r1 = new String("Privet");
-        String rep1 = r1.replace('i', 'U'); // возвращает новую строку с заменёнными символами строки
+        String rep1 = r1.replace('i', 'U'); // возвращает новую строку с измененным чаром
         System.out.println(rep1);
-        String rep2 = r1.replace("iv", "OV");
+        String rep2 = r1.replace("iv", "OV"); // возвращает новую строку с изменной частью строки
         System.out.println(rep2);
 
         String con1 = "Privet, ";
