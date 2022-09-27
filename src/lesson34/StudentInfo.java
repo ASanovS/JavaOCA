@@ -1,12 +1,13 @@
 package lesson34;
 
 import java.util.ArrayList;
+import java.util.function.Predicate;
 
 class StudentInfo {
 
-    void checkStudent(ArrayList<Student> studentArrayList, SudentCheck sc) {
+    void checkStudent(ArrayList<Student> studentArrayList, Predicate<Student> studentPredicate) {
         for (Student s : studentArrayList) {
-            if (sc.test(s)) {
+            if (studentPredicate.test(s)) {
                 printStudent(s);
             }
         }
