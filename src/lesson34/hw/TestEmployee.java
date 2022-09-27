@@ -20,11 +20,11 @@ public class TestEmployee {
         listEmployee.add(e4);
         listEmployee.add(e5);
 
-        filtraciaRabotnikov(listEmployee, (Employee em) -> em.department.equals("IT") && em.salary > 200);
+        employeesFiltr(listEmployee, (Employee em) -> em.department.equals("IT") && em.salary > 200);
         System.out.println("-----------------");
-        filtraciaRabotnikov(listEmployee, (Employee em) -> em.name.endsWith("e") && em.salary != 450);
+        employeesFiltr(listEmployee, (Employee em) -> em.name.endsWith("e") && em.salary != 450);
         System.out.println("-----------------");
-        filtraciaRabotnikov(listEmployee, (Employee em) -> em.name.equals(em.department));
+        employeesFiltr(listEmployee, (Employee em) -> em.name.equals(em.department));
     }
 
     static void printEmployee(Employee employee) {
@@ -33,7 +33,7 @@ public class TestEmployee {
                 ", salary: " + employee.salary);
     }
 
-    static void filtraciaRabotnikov(ArrayList<Employee> employeeArrayList, Predicate<Employee> predicate) {
+    static void employeesFiltr(ArrayList<Employee> employeeArrayList, Predicate<Employee> predicate) {
         for (Employee e : employeeArrayList) {
             if (predicate.test(e)) {
                 printEmployee(e);
