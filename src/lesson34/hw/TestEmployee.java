@@ -10,7 +10,7 @@ public class TestEmployee {
 
         Employee e1 = new Employee("Joe", "QA", 500);
         Employee e2 = new Employee("Jon", "IT", 350);
-        Employee e3 = new Employee("Jane", "IT", 200);
+        Employee e3 = new Employee("Elizabeth", "IT", 200);
         Employee e4 = new Employee("Sara", "HR", 300);
         Employee e5 = new Employee("HR", "HR", 300);
 
@@ -22,7 +22,7 @@ public class TestEmployee {
 
         employeesFilter(listEmployee, (Employee em) -> em.department.equals("IT") && em.salary > 200);
         System.out.println("-----------------");
-        employeesFilter(listEmployee, (Employee em) -> em.name.endsWith("e") && em.salary != 450);
+        employeesFilter(listEmployee, (Employee em) -> em.name.startsWith("E") && em.salary != 450);
         System.out.println("-----------------");
         employeesFilter(listEmployee, (Employee em) -> em.name.equals(em.department));
     }
